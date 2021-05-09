@@ -17,6 +17,11 @@ for link in $links;do
     echo '    https://github.com/collections/learn-to-code'$link
     echo '    >' $desc
     echo
+    if [$ == $(1)]; then
+        staecho 'https://github.com/'$userlink > toopen
+    else
+        echo 'https://github.com/'$userlink >> toopen
+    fi
     i=$((i+1))
 done
 

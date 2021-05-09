@@ -41,6 +41,11 @@ for link in $repolinks;do
     echo '    > Popular Repo: '$repo
     echo '    > https://github.com'$link
     echo
+    if [$ == $(1)]; then
+        staecho 'https://github.com/'$userlink > toopen
+    else
+        echo 'https://github.com/'$userlink >> toopen
+    fi
     i=$((i+1))
 done
 

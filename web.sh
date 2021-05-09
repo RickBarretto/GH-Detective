@@ -5,10 +5,10 @@ cd Scripts/
 
 case $1 in
     explore)
-        exec ./explore.sh
+        exec ./explore.sh $2
         ;;
     learn)
-        exec ./learntocode.sh
+        exec ./learntocode.sh $2
         ;;
     dev)
         exec ./dev.sh $*
@@ -16,8 +16,11 @@ case $1 in
     --help)
         exec ./help.sh
         ;;
+    open)
+        exec ./open.sh $2
+        ;;
     *)
-        exec ./explore.sh
+        exec ./explore.sh $2
         ;;   
     esac
 

@@ -1,0 +1,1 @@
++ [ ] - Add open in browser command

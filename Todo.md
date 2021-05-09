@@ -1,1 +1,1 @@
-+ [ ] - Add open in browser command
++ [x] - Add open in browser command

@@ -1,8 +1,7 @@
 # !/bin/bash
 
 
-
-link=$(cat topopen | grep '$*')
+link=$(cat toopen | grep $2)
 
 start $link
 

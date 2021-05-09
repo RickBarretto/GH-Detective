@@ -1,6 +1,7 @@
 # !/bin/bash
 # https://github.com/RickBarretto/Github-cli-scrapy
 
+echo '' > toopen
 
 # Catching Github's devs
 case $2 in
@@ -41,11 +42,7 @@ for link in $repolinks;do
     echo '    > Popular Repo: '$repo
     echo '    > https://github.com'$link
     echo
-    if [$ == $(1)]; then
-        staecho 'https://github.com/'$userlink > toopen
-    else
-        echo 'https://github.com/'$userlink >> toopen
-    fi
+    echo 'https://github.com/'$userlink >> toopen
     i=$((i+1))
 done
 

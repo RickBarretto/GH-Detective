@@ -47,5 +47,4 @@ for link in $repolinks;do
 done
 
 cd ..
-
 exit

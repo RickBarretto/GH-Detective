@@ -24,5 +24,4 @@ for link in $links;do
 done
 
 cd ..
-
 exit

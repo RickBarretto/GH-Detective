@@ -14,7 +14,7 @@ case $1 in
         ;;
     dev)
         cd Scripts/
-        exec ./dev $*
+        exec ./dev.sh $*
         ;;
     --help)
         cd Scripts/

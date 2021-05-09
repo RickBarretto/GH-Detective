@@ -7,7 +7,12 @@ case $1 in
         echo 'What?'
         cd ..
         ;;
+    learn)
+        cd Scripts/
+        exec ./learntocode.sh
+        ;;
     *)
+        cd Scripts/
         exec ./explore.sh
         ;;   
     esac

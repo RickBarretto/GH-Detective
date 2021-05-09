@@ -1,4 +1,5 @@
 # !/bin/bash
+# https://github.com/RickBarretto/Github-cli-scrapy
 
 # Catching Github's explore
 curl 'https://github.com/explore' > explore

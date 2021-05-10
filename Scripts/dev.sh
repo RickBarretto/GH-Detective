@@ -1,6 +1,7 @@
 # !/bin/bash
 # https://github.com/RickBarretto/Github-cli-scrapy
 
+# Cleaning file
 echo '' > toopen
 
 # Catching Github's devs
@@ -27,11 +28,8 @@ case $2 in
     ;;
     esac
 
-# Picking relative link
-
-
+# Printing
 i=1
-
 for link in $repolinks;do
     # User/Project
     userlink=$(echo $link | cut -d'/' -f2)
@@ -42,6 +40,7 @@ for link in $repolinks;do
     echo '    > Popular Repo: '$repo
     echo '    > https://github.com'$link
     echo
+    # saving in a temp file
     echo 'https://github.com/'$userlink >> toopen
     i=$((i+1))
 done

@@ -22,7 +22,7 @@ orglink=$( cat temp | grep --color 'class="user-mention"' | cut -d'=' -f6 | cut 
 
 website=$(cat temp | grep --color '<a rel="nofollow me" class="Link--primary "' | cut -d$'\n' -f1 | cut -d'=' -f4 | cut -d'"' -f2)
 twitter_link=$(cat temp | grep --color '<a rel="nofollow me" class="Link--primary "' | grep --color 'https://twitter.com/' | cut -d'=' -f4 | cut -d'"' -f2)
-twitter_name='@'$(cat temp | grep --color '<a rel="nofollow me" class="Link--primary "' | grep 'https://twitter.com/' | cut -d'@' -f2 | cut -d'<' -f1)
+twitter_name=$(cat temp | grep --color '<a rel="nofollow me" class="Link--primary "' | grep 'https://twitter.com/' | cut -d'@' -f2 | cut -d'<' -f1)
 
 orgs=$(cat temp | grep --color 'data-hovercard-type="organization"' -A1 | grep --color 'size="32"' | cut -d'=' -f5 | cut -d'"' -f2)
 
@@ -54,6 +54,9 @@ echo $name '- @'$aname
 echo
 # Bio
 echo -e '\t'$bio
+echo
+echo -e '\tWebsite' $website
+echo -e '\tTwitter:' $twitter_name - $twitter_link
 echo
 # Stats
 echo -e '\t🤵Followers:' $followers '  -  🤵Following:' $following

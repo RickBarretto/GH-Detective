@@ -9,3 +9,4 @@
 + [ ] - Crate a banner
 + [ ] - Create a website
 + [ ] - Create a intall script
++ [ ] - Change the proect name for a better

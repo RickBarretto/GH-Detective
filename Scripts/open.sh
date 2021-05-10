@@ -1,9 +1,12 @@
 # !/bin/bash
+# https://github.com/RickBarretto/Github-cli-scrapy
 
 
-link=$(cat toopen | grep $2)
 
-start $link
+for arg in $*; do
+    link=$(cat toopen | grep $arg)
+    start $link
+done
 
 cd ..
 exit

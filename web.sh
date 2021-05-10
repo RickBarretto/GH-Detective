@@ -13,6 +13,10 @@ case $1 in
     dev)
         exec ./dev.sh $*
         ;;
+    opensource)
+        start https://opensource.guide/;;
+    guide)
+        start https://opensource.guide/;;
     --help)
         exec ./help.sh
         ;;

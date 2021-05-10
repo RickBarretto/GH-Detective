@@ -10,8 +10,19 @@ case $1 in
     learn)
         exec ./learntocode.sh $*
         ;;
-    dev)
+    devs)
         exec ./dev.sh $*
+        ;;
+    get)
+        case $2 in 
+            dev)
+                user=$($3)
+                exec ./user.sh $*
+                ;;
+            *)
+                echo 'Type github help'
+                ;;
+            esac
         ;;
     opensource)
         start https://opensource.guide/;;

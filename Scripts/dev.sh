@@ -35,7 +35,7 @@ for link in $repolinks;do
     userlink=$(echo $link | cut -d'/' -f2)
     repo=$(echo $link | cut -d'/' -f3)
 
-    echo $userlink
+    echo $dev '-' $userlink
     echo '    https://github.com/'$userlink
     echo '    > Popular Repo: '$repo
     echo '    > https://github.com'$link

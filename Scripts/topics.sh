@@ -4,7 +4,6 @@
 # Cleaning file
 echo '' > toopen
 
-
 # Catching Github's explore
 echo 'https://github.com/topics/'$2
 curl 'https://github.com/topics/'$2 > temp

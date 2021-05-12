@@ -33,6 +33,7 @@ for link in $repoLinks; do
     repo=$(echo $link | cut -d'/' -f3)
     echo -e '  💾' $repo
     echo -e '     > https://github.com'$link
+    echo 'https://github.com'$link' ' >> toopen
     echo
     i=$((i+1))
 done

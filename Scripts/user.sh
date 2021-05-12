@@ -25,7 +25,7 @@ website=$(cat temp | grep --color '<a rel="nofollow me" class="Link--primary "' 
 twitter_link=$(cat temp | grep --color '<a rel="nofollow me" class="Link--primary "' | grep --color 'https://twitter.com/' | cut -d'=' -f4 | cut -d'"' -f2)
 twitter_name=$(cat temp | grep --color '<a rel="nofollow me" class="Link--primary "' | grep 'https://twitter.com/' | cut -d'@' -f2 | cut -d'<' -f1)
 
-orgs=$(cat temp | grep --color 'data-hovercard-type="organization"' -A1 | grep --color 'size="32"' | cut -d'=' -f5 | cut -d'"' -f2)
+orgs=$(cat temp | grep --color 'data-hovercard-type="organization"' -A1 | grep --color 'size="32"' | cut -d'=' -f5 | cut -d'"' -f2 )
 
 try_artic=$(cat temp | grep 'alt="Arctic Code Vault Contributor"')
 b=''
@@ -58,7 +58,9 @@ echo
 echo -e '\t'$bio
 echo
 echo -e '\tWebsite' $website
+echo $website' ' >> toopen
 echo -e '\tTwitter:' $twitter_name - $twitter_link
+echo $twitter_link' ' >> toopen
 echo
 # Stats
 echo -e '\t🤵Followers:' $followers '  -  🤵Following:' $following
@@ -67,6 +69,7 @@ echo
 # Orgs
 echo -e '\t🏢Current Organization:' '@'$org
 echo -e '\t>' $orglink
+echo $orglink' ' >> toopen
 echo 
 echo -e '\t🐧Arctic Code Vault Contributor:' $artic
 echo
@@ -80,6 +83,7 @@ for o in $orgs; do
         echo -e '\t🏬'$o'\t> github.com/'$(echo $o | cut -d'@' -f2 )
     fi
 done
+echo 'https://github.com/'$(echo $o | cut -d'@' -f2 ) >> toopen
 
 # Main Repos
 echo
@@ -92,6 +96,7 @@ for pinLink in $pinnedLinks;do
     echo -e '\t💾'$(cat temp | grep --color '<span class="repo"' | cut -d'<' -f-2 | cut -d'>' -f2 | cut -d$'\n' -f$i)
     echo -e '\t    > https://github.com'$link
     echo -e '\t   🈯[ '$lang ']'
+    echo 'https://github.com'$pinLink' ' >> toopen
     echo
     i=$((i+1))
 done

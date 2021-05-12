@@ -41,7 +41,7 @@ for link in $repolinks;do
     echo '    > https://github.com'$link
     echo
     # saving in a temp file
-    echo 'https://github.com/'$userlink >> toopen
+    echo '. https://github.com/'$userlink >> toopen
     i=$((i+1))
 done
 

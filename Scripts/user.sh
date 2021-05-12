@@ -40,7 +40,7 @@ pinnedTitles=$(cat temp | grep --color '<span class="repo"' | cut -d'<' -f-2 | c
 pinnedLangs=$(cat temp | grep 'itemprop="programmingLanguage"' | cut -d'>' -f2 | cut -d'<' -f1)
 pinnedLinks=$(cat temp | grep --color '<a class="text-bold flex-auto min-width-0 "' | cut -d'=' -f5 | cut -d'"' -f-2| cut -d'"' -f2)
 
-repoCount=$(cat temp | grep 'class="Counter "' | cut -d'>' -f2 | cut -d'<' -f1 | cut -d$'\n' -f1)
+repoCount=$(cat temp | grep 'class="Counter' | cut -d'>' -f2 | cut -d'<' -f1 | cut -d$'\n' -f1)
 contribuitionsLastY=$(cat temp | grep 'class="f4 text-normal mb-2"' -A1 | grep -v 'class="f4 text-normal mb-2"' | awk '{print $1}')
 nCommitsOnMonth=$(cat temp | grep 'class="color-text-primary ws-normal text-left"' -A4 | grep -v 'class' | awk '{print $1} {print $2}' | tr $'\n' ' ' | awk '{print $2}')
 inNRepos=$(cat temp | grep 'class="color-text-primary ws-normal text-left"' -A4 | grep -v 'class' | awk '{print $1} {print $2}' | tr $'\n' ' ' | awk '{print $5}')

@@ -3,8 +3,8 @@
 
 # Cleaning file
 echo '' > toopen
-echo $*
-user=$(echo $* | cut -d' ' -f3)
+
+user=$(echo $* | cut -d' ' -f2)
 
 # Catching Github's explore
 echo 'https://github.com/'$user

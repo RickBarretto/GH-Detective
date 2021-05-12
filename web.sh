@@ -14,20 +14,21 @@ case $1 in
         exec ./dev.sh $*
         ;;
     get)
-        case $2 in 
-            dev)
-                user=$($3)
-                exec ./user.sh $*
-                ;;
+        case $3 in
+            --repos)
+            exec ./repos.sh $*
+            ;;
             *)
-                echo 'Type github help'
-                ;;
-            esac
+            exec ./user.sh $*
+            ;;
+        esac
         ;;
     opensource)
-        start https://opensource.guide/;;
+        start https://opensource.guide/
+        ;;
     guide)
-        start https://opensource.guide/;;
+        start https://opensource.guide/
+        ;;
     --help)
         exec ./help.sh
         ;;

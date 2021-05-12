@@ -1,5 +1,5 @@
 + [x] - Add open in browser command
-+ [ ] - User Location
++ [x] - User Location
 + [ ] - Show readme
 + [ ] - Show repos page by page
 + [ ] - Add a decent readme to this project

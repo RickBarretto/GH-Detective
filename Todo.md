@@ -8,5 +8,5 @@
 + [ ] - Create a logo
 + [ ] - Crate a banner
 + [ ] - Create a website
-+ [ ] - Create a intall script
-+ [ ] - Change the proect name for a better
++ [ ] - Create a install script
++ [ ] - Change the project name for another better

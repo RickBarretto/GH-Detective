@@ -12,6 +12,7 @@ curl 'https://github.com/'$user > temp
 
 name=$(cat temp | grep --color -A1 'itemprop="name"' | grep -v 'itemprop="name"' | awk '{print $1} {print $2} {print $3}' | tr $'\n' ' ')
 aname=$(cat temp | grep --color -A1 'itemprop="additionalName"' | grep -v 'itemprop="additionalName"' | awk '{print $1} {print $2} {print $3}' | tr $'\n' ' ')
+loc=$()
 
 bio=$(cat temp | grep --color -A1 'class="p-note user-profile-bio mb-3 js-user-profile-bio f4"' | grep -v 'class="p-note user-profile-bio mb-3 js-user-profile-bio f4"' | awk '{print}'| cut -d'>' -f3 | cut -d'<' -f-1 )
 followers=$(cat temp | grep --color 'class="text-bold color-text-primary"' | cut -d'>' -f2| cut -d'<' -f1 | cut -d$'\n' -f1)
@@ -84,10 +85,10 @@ echo
 echo -e 'Pinned Repos:'
 i=1
 
-for pinTitle in $pinnedTitles;do
+for pinLink in $pinnedLinks;do
     lang=$(echo $pinnedLangs | cut -d' ' -f$i)
-    link=$(echo $pinnedLinks | cut -d' ' -f$i)
-    echo -e '\t💾'$pinTitle
+    link=$(echo $pinLink | cut -d' ' -f$i)
+    echo -e '\t💾'$(cat temp | grep --color '<span class="repo"' | cut -d'<' -f-2 | cut -d'>' -f2 | cut -d$'\n' -f$i)
     echo -e '\t    > https://github.com'$link
     echo -e '\t   🈯[ '$lang ']'
     echo

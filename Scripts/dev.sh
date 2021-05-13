@@ -7,23 +7,23 @@ echo '' > toopen
 # Catching Github's devs
 case $2 in
     --month)
-    curl 'https://github.com/trending/developers?since=monthly'> temp
+    curl 'https://github.com/trending/developers/'$lang'?since=monthly'> temp
     repolinks=$(cat temp | grep --color $'data-ga-click="Explore, go to repository, location:trending developers"' | cut -d'=' -f7 | cut -d'"' -f2)
     ;;
     -m)
-    curl 'https://github.com/trending/developers?since=monthly'> temp
+    curl 'https://github.com/trending/developers/'$lang'?since=monthly'> temp
     repolinks=$(cat temp | grep --color $'data-ga-click="Explore, go to repository, location:trending developers"' | cut -d'=' -f7 | cut -d'"' -f2)
     ;;
     --week)
-    curl 'https://github.com/trending/developers?since=weekly'> temp
+    curl 'https://github.com/trending/developers/'$lang'?since=weekly'> temp
     repolinks=$(cat temp | grep --color $'data-ga-click="Explore, go to repository, location:trending developers"' | cut -d'=' -f7 | cut -d'"' -f2)
     ;;
     -w)
-    curl 'https://github.com/trending/developers?since=weekly'> temp
+    curl 'https://github.com/trending/developers/'$lang'?since=weekly'> temp
     repolinks=$(cat temp | grep --color $'data-ga-click="Explore, go to repository, location:trending developers"' | cut -d'=' -f7 | cut -d'"' -f2)
     ;;
     *)
-    curl 'https://github.com/trending/developers'> temp
+    curl 'https://github.com/trending/developers/'$lang > temp
     repolinks=$(cat temp | grep --color $'data-ga-click="Explore, go to repository, location:trending developers"' | cut -d'=' -f6 | cut -d'"' -f2)
     ;;
     esac

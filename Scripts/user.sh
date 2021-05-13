@@ -58,9 +58,9 @@ echo
 echo -e '\t'$bio
 echo
 echo -e '\tWebsite' $website
-echo $website' ' >> toopen
+echo $website >> toopen
 echo -e '\tTwitter:' $twitter_name - $twitter_link
-echo $twitter_link' ' >> toopen
+echo $twitter_link >> toopen
 echo
 # Stats
 echo -e '\t🤵Followers:' $followers '  -  🤵Following:' $following
@@ -69,7 +69,7 @@ echo
 # Orgs
 echo -e '\t🏢Current Organization:' '@'$org
 echo -e '\t>' $orglink
-echo $orglink' ' >> toopen
+echo $orglink >> toopen
 echo 
 echo -e '\t🐧Arctic Code Vault Contributor:' $artic
 echo

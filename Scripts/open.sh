@@ -3,7 +3,7 @@
 
 
 for arg in $*; do
-    link=$(cat toopen | grep $arg | cut -d' ' -f-2)
+    links=$(cat toopen | grep $arg | cut -d' ' -f2)
     start $link
 done
 

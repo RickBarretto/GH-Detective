@@ -21,7 +21,7 @@ for link in $links;do
     echo '    >' $desc
     echo
     # Saving in a temp file
-    echo '. https://github.com'$link' ' >> toopen
+    echo 'https://github.com'$link >> toopen
     i=$((i+1))
 done
 

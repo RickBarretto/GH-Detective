@@ -5,9 +5,9 @@ echo $*
 i=1
 for arg in $*; do
     links=$(cat toopen | grep $arg | cut -d' ' -f2)
-    link=$(echo $links | cut -d$'\n' -f$i)
-    start $link
-    i=$((i+1))
+    for link in $links; do
+        start $link
+    done
 done
 
 cd ..

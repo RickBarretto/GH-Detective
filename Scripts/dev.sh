@@ -7,7 +7,6 @@ echo '' > toopen
 
 lang=''
 since='daily'
-test_since='daily'
 
 while [ ! -z "$2" ]; do
     case "$2" in

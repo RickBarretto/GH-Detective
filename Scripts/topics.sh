@@ -4,26 +4,47 @@
 echo $*
 # Cleaning file
 echo '' > toopen
+topic=$2
+
+while [ ! -z "$3" ]; do
+    case "$3" in
+        --best|-b)
+            sort='?o=desc&s='
+            ;;
+        --star | -s)
+            sort='?o=desc&s=stars'
+            ;;
+        --forks | -f)
+            sort='?o=desc&s=forks'
+            ;;
+        --new | -n)
+            sort='?o=desc&s=updated'
+            ;;
+        *)
+            ;;
+    esac
+shift
+done
 
 # Catching Github's explore
-echo 'https://github.com/topics/'$2
-curl 'https://github.com/topics/'$2 > temp
+echo 'https://github.com/topics/'$topic$sort
+curl 'https://github.com/topics/'$topic$sort > temp
 
 # Picking relative link
-links=$(cat temp | grep 'class="text-bold"' | cut -d '=' -f5 | cut -d'"' -f2)
+links=$(cat temp | grep 'class="text-bold"' | cut -d'=' -f7 | cut -d'"' -f2)
 
 # Printing
 i=1
 for link in $links;do
     # User/Project
     desc=$(cat temp | grep '<p class="color-text-secondary mb-0"><div>' | cut -d'>' -f3 | cut -d'<' -f1|cut -d$'\n' -f$i)
-    echo $(echo $link | cut -d'/' -f2-3)
+    echo 💾$(echo $link | cut -d'/' -f2-3)
     # Href
-    echo '    https://github.com/'$link
+    echo '    https://github.com'$link
     echo '    >' $desc
     echo
     # Saving in a temp file
-    echo 'https://github.com/'$link >> toopen
+    echo 'https://github.com'$link >> toopen
     i=$((i+1))
 done
 

@@ -1,6 +1,7 @@
 # !/bin/bash
 # https://github.com/RickBarretto/Github-cli-scrapy
 
+echo $*
 # Cleaning file
 echo '' > toopen
 

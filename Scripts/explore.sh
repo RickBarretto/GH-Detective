@@ -5,8 +5,29 @@ echo $*
 # Cleaning file
 echo '' > toopen
 
-# Catching Github's explore
-curl 'https://github.com/explore' > temp
+lang=''
+since='daily'
+
+while [ ! -z "$2" ]; do
+    case "$2" in
+        --month|--monthly|-m)
+            since="monthly"
+            ;;
+        --week|--weekly|-w)
+            since="weekly"
+            ;;
+        --day|--daily|-d)
+            since="daily"
+            ;;
+        *)
+            lang=$2
+            ;;
+    esac
+shift
+done
+
+echo 'https://github.com/trending/developers/'$lang'?since='$since
+curl 'https://github.com/trending/developers/'$lang'?since='$since > temp
 
 # Picking relative link
 links=$(cat temp | grep 'class="text-bold"' | cut -d '=' -f5 | cut -d'"' -f2)

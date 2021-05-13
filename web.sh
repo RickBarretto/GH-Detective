@@ -11,7 +11,7 @@ case $1 in
         exec ./learntocode.sh $*
         ;;
     devs)
-        exec ./dev.sh $*
+        exec ./dev.sh $2 $3 $4
         ;;
     get)
         case $3 in
@@ -37,6 +37,10 @@ case $1 in
         ;;
     topic)
         exec ./topics.sh $*
+        ;;
+    test)
+        cd ../test/
+        exec ./test.sh $*
         ;;
     *)
         exec ./explore.sh $*

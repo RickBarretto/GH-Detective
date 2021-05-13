@@ -1,33 +1,34 @@
 # !/bin/bash
 # https://github.com/RickBarretto/Github-cli-scrapy
 
+echo $*
 # Cleaning file
 echo '' > toopen
 lang=$('')
 
-# Catching Github's devs
-case $2 in
-    --month)
-    curl 'https://github.com/trending/developers/'$lang'?since=monthly'> temp
-    repolinks=$(cat temp | grep --color $'data-ga-click="Explore, go to repository, location:trending developers"' | cut -d'=' -f7 | cut -d'"' -f2)
-    ;;
-    -m)
-    curl 'https://github.com/trending/developers/'$lang'?since=monthly'> temp
-    repolinks=$(cat temp | grep --color $'data-ga-click="Explore, go to repository, location:trending developers"' | cut -d'=' -f7 | cut -d'"' -f2)
-    ;;
-    --week)
-    curl 'https://github.com/trending/developers/'$lang'?since=weekly'> temp
-    repolinks=$(cat temp | grep --color $'data-ga-click="Explore, go to repository, location:trending developers"' | cut -d'=' -f7 | cut -d'"' -f2)
-    ;;
-    -w)
-    curl 'https://github.com/trending/developers/'$lang'?since=weekly'> temp
-    repolinks=$(cat temp | grep --color $'data-ga-click="Explore, go to repository, location:trending developers"' | cut -d'=' -f7 | cut -d'"' -f2)
-    ;;
-    *)
-    curl 'https://github.com/trending/developers/'$lang > temp
-    repolinks=$(cat temp | grep --color $'data-ga-click="Explore, go to repository, location:trending developers"' | cut -d'=' -f6 | cut -d'"' -f2)
-    ;;
+lang=''
+since='daily'
+
+while [ ! -z "$2" ]; do
+    case "$2" in
+        --month|--monthly|-m)
+            since="monthly"
+            ;;
+        --week|--weekly|-w)
+            since="weekly"
+            ;;
+        --day|--daily|-d)
+            since="daily"
+            ;;
+        *)
+            lang=$2
+            ;;
     esac
+shift
+done
+
+echo 'https://github.com/trending/developers/'$lang'?since='$since
+curl 'https://github.com/trending/developers/'$lang'?since='$since > temp
 
 # Printing
 i=1

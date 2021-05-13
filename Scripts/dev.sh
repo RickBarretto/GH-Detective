@@ -3,6 +3,7 @@
 
 # Cleaning file
 echo '' > toopen
+lang=$('')
 
 # Catching Github's devs
 case $2 in

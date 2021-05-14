@@ -107,6 +107,23 @@ $ ./web.sh topic bash --new
 
 ## 📂 Open
 
+After using a command that returns Github's links, you can use this command to automaticaly open, on standard browser, the last links showed.
+
+```bash
+$ ./web.sh open [grep-array]
+```
++ Grep-Array can be:
+  + You must to write the link adress, or a section from this link. The program'll parse it and open.
+  + You can search for multiples links, use space to separe it.
+> It'll returns to you the last informations showed on terminal.
+
+**Examples:**
+```bash
+$ ./web.sh topic bash --s
+$ ./web.sh open the-art pure-bash check
+$ ./web.sh get john-preston --repos
+$ ./web.sh open desktop macho meson
+```
 
 ### Help
 ### Learn

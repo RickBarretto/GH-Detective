@@ -13,6 +13,8 @@ This app captures the Github's trending.
 
 # How to use
 
+
+
 ## ✈️ Explore
 **Standard:**
 ```bash
@@ -23,6 +25,8 @@ $ ./web.sh
 $ ./web.sh explore
 ```
 > It'll returns to you informations from the [Explore Github's page](https://github.com/explore).
+
+
 
 ## 👋 Devs
 **Standard:**
@@ -51,8 +55,28 @@ $ ./web.sh devs -w cpp
 ```
 > It'll returns to you informations from the [Trending > Developers Github's page](https://github.com/trending/developers).
 
-## Get
 
+
+## 🙌 Get
+**Standard:**
+```bash
+$ ./web.sh get [username]
+```
+> It'll returns to you informations from the [Github > Developer's Profie](https://github.com/RickBarretto).
+
+**With Repository parameter**
+```bash
+$ ./web.sh get [username] <--repo>
+```
++ Repo can be:
+  + `--repo` | `-r`
+> It'll returns to you informations from the [Github > Developer's Repositories](https://github.com/RickBarretto?tab=repositories).
+
+**Examples:**
+```bash
+$ ./web.sh get rickbarretto
+$ ./web.sh get john-preston -r
+```
 
 
 ### Help

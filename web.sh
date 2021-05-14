@@ -15,7 +15,7 @@ case $1 in
         ;;
     get)
         case $3 in
-            --repos)
+            --repos | -r)
             exec ./repos.sh $*
             ;;
             *)

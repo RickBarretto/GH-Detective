@@ -22,7 +22,7 @@ $ ./web.sh
 ```bash
 $ ./web.sh explore
 ```
-> It will returns to you informations from the [Explore Github's page](https://github.com/explore).
+> It'll returns to you informations from the [Explore Github's page](https://github.com/explore).
 
 ## 👋 Devs
 **Standard:**
@@ -49,7 +49,11 @@ $ ./web.sh devs <lang>
 $ ./web.sh devs python --m
 $ ./web.sh devs -w cpp
 ```
+> It'll returns to you informations from the [Trending > Developers Github's page](https://github.com/trending/developers).
+
+## Get
+
+
 
 ### Help
-### Devs
 ### Learn

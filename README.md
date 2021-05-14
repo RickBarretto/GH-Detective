@@ -125,5 +125,17 @@ $ ./web.sh get john-preston --repos
 $ ./web.sh open desktop macho meson
 ```
 
-### Help
-### Learn
+## Open Souce Guide (Automaticaly Opens on Browser)
+
+### OpenSource
+```bash
+$ ./web.sh opensource
+```
+> Opens [Source Guidelines](https://opensource.guide/)
+
+### Guide
+```bash
+$ ./web.sh guide
+```
+> Opens [Source Guidelines](https://opensource.guide/)
+> 

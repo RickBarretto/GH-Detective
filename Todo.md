@@ -10,4 +10,4 @@
 + [ ] - Crate a banner
 + [ ] - Create a website
 + [ ] - Create a install script
-+ [ ] - Change the project name for another better
++ [x] - Change the project name for another better > SHBash

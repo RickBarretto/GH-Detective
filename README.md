@@ -26,7 +26,7 @@ $ ./web.sh explore
 ```
 > It'll returns to you informations from the [Explore Github's page](https://github.com/explore).
 
-
+---
 
 ## 👋 Devs
 **Standard:**
@@ -55,7 +55,7 @@ $ ./web.sh devs -w cpp
 ```
 > It'll returns to you informations from the [Trending > Developers Github's page](https://github.com/trending/developers).
 
-
+---
 
 ## 🙌 Get
 **Standard:**
@@ -77,6 +77,35 @@ $ ./web.sh get [username] <--repo>
 $ ./web.sh get rickbarretto
 $ ./web.sh get john-preston -r
 ```
+
+---
+
+## 📚 Topic
+```bash
+$ ./web.sh topic [topic]
+```
+> It'll returns to you informations from the [Github > Topics > Topic](https://github.com/topics).
+
+**With Sort parameter**
+```bash
+$ ./web.sh topic [topic] <--sort>
+```
++ Sort can be:
+  + `--best` | `-b`;
+  + `--star` | `-s`;
+  + `--forks` | `-f`;
+  + `--new` | `-n`;
+> It'll returns to you informations from the [Github > Topics > Topic](https://github.com/topics) sorted.
+
+**Examples:**
+```bash
+$ ./web.sh topic 3d
+$ ./web.sh topic bash --new
+```
+
+---
+
+## 📂 Open
 
 
 ### Help

@@ -105,6 +105,13 @@ $ ./web.sh topic bash --new
 
 ---
 
+## 🏫 Learn
+```bash
+$ ./web.sh learn
+```
+> Returns all Learning content from [Github > Collections > Learn To Code](https://github.com/collections/learn-to-code)
+---
+
 ## 📂 Open
 
 After using a command that returns Github's links, you can use this command to automaticaly open, on standard browser, the last links showed.
@@ -121,11 +128,14 @@ $ ./web.sh open [grep-array]
 ```bash
 $ ./web.sh topic bash --s
 $ ./web.sh open the-art pure-bash check
+
 $ ./web.sh get john-preston --repos
 $ ./web.sh open desktop macho meson
 ```
 
-## Open Souce Guide (Automaticaly Opens on Browser)
+---
+
+## 📦 Open Souce Guide (Automaticaly Opens on Browser)
 
 ### OpenSource
 ```bash
@@ -138,4 +148,3 @@ $ ./web.sh opensource
 $ ./web.sh guide
 ```
 > Opens [Source Guidelines](https://opensource.guide/)
-> 

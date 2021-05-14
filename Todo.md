@@ -6,7 +6,9 @@
 + [ ] - Add a decent readme to this project
 + [x] - ~~decide whether to change the terminal output to index.html renderized on a browser~~ (Removed)
 + [ ] - Search command
++ [ ] - Events command
 + [ ] - Trendings command
++ [ ] - Colletions command
 + [ ] - Create a decent help command <-- opens in browser
 + [ ] - Create a logo
 + [ ] - Crate a banner

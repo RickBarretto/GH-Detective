@@ -13,8 +13,6 @@ This app captures the Github's trending.
 
 # How to use
 
-
-
 ## ✈️ Explore
 **Standard:**
 ```bash

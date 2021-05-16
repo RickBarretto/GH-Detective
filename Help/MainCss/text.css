@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+p, h1, h2, h3, h4, h5, h6, a, span
+{
+    font-family: 'PT Mono', monospace;
+}
+
+.side-menu {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: lavender;
+}
+
+.h1 {
+    font-size: 3rem;
+}

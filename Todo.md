@@ -9,6 +9,7 @@
 + [ ] - Events command
 + [ ] - Trendings command
 + [ ] - Colletions command
++ [ ] - Turn Markdown into html to use details > summary
 + [ ] - Create a decent help command <-- opens in browser
 + [ ] - Create a logo
 + [ ] - Crate a banner

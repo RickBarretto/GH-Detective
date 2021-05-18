@@ -1,3 +1,10 @@
+:root {
+    --title-initial: .5s;
+    --menu-initial: 1.5s;
+    --foot-initial: 3s;
+    --footer-initial: 3.5s;
+}
+
 .bg {
     position: absolute;
     width: 100%;
@@ -21,6 +28,13 @@
 
 .container > .title > img {
     width: 100%;
+    opacity: 0;
+    animation:fade .5s ease-out calc(var(--title-initial) + 1s  ) forwards;
+}
+
+.container > .title > h1 {
+    opacity: 0;
+    animation:fade .5s ease-out calc(var(--title-initial) + .5s  ) forwards;
 }
 
 .container > .more {
@@ -33,6 +47,7 @@
     padding: 1rem 10rem;
     margin: 1rem 0;
     transform: skew(-20deg) translateX(1rem);
+    transform-origin: right;
 }
 
 .container > .more > ul > li:hover {
@@ -48,6 +63,13 @@
     color: black;
 }
 
+.container  > .more >  ul > li:nth-child(1){
+    animation:menu .5s ease-out calc(var(--menu-initial) + .5s ) forwards; opacity: 0;
+} .container > .more > ul > li:nth-child(2){
+    animation:menu .5s ease-out calc(var(--menu-initial) + 1s  ) forwards; opacity: 0;
+} .container > .more > ul > li:nth-child(3){
+    animation:menu .5s ease-out calc(var(--menu-initial) + 1.5s) forwards; opacity: 0;
+}
 
 .container > .more > div {
     display: flex;
@@ -68,6 +90,8 @@ footer > ul {
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    opacity: 0;
+    animation:fade .5s ease-out calc(var(--footer-initial) + .5s ) forwards;
 }
 
 ul {
@@ -85,7 +109,7 @@ ul {
     bottom: 0%;
     left: 50%;
     transform: translateX(2rem);
-    animation:fade 1s ease-out infinite;
+    opacity: 0;
 }
 
 .fleft {
@@ -108,3 +132,44 @@ ul {
 .footprint:nth-child(9), .footprint:nth-child(10) {
     bottom: 80%;
 }
+
+#f1 {
+    animation:fade .5s ease-out calc(var(--foot-initial) + .5s ) forwards;
+} #f2 {
+    animation:fade .5s ease-out calc(var(--foot-initial) + 1s  ) forwards;
+} #f3 {
+    animation:fade .5s ease-out calc(var(--foot-initial) + 1.5s) forwards;
+} #f4 {
+    animation:fade .5s ease-out calc(var(--foot-initial) + 2s  ) forwards;
+} #f5 {
+    animation:fade .5s ease-out calc(var(--foot-initial) + 2.5s) forwards;
+} #f6 {
+    animation:fade .5s ease-out calc(var(--foot-initial) + 3s  ) forwards;
+} #f7 {
+    animation:fade .5s ease-out calc(var(--foot-initial) + 3.5s) forwards;
+} #f8 {
+    animation:fade .5s ease-out calc(var(--foot-initial) + 4s  ) forwards;
+} #f9 {
+    animation:fade .5s ease-out calc(var(--foot-initial) + 4.5s) forwards;
+} #f10 {
+    animation:fade .5s ease-out calc(var(--foot-initial) + 5s  ) forwards;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@keyframes menu {
+    from {
+        opacity: 0;
+        width: 0%;
+    } to {
+        opacity: 1;
+        width: 100%;
+    }
+}
+

@@ -105,11 +105,12 @@ footer {
 
 footer > ul {
     display: flex;
+    width: 100%;
     flex-flow: nowrap row;
-    justify-content: center;
     align-items: center;
-    justify-items: center;
+    justify-content: space-around;
     text-align: center;
+    gap: .1rem;
     padding: 0 1rem;
     opacity: 0;
     animation:fade2 .5s ease-out calc(var(--footer-initial) + .5s ) forwards;

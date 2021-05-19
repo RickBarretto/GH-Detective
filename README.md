@@ -1,4 +1,4 @@
-# GHBAsh
+# GH Detective
 
 ## What is it?
 

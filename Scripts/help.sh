@@ -1,5 +1,5 @@
 # !/bin/bash
-# https://github.com/RickBarretto/Github-cli-scrapy
+# https://github.com/RickBarretto/GH-Detective
 
 echo 
 

@@ -11,8 +11,8 @@
 + [ ] - Colletions command
 + [ ] - Turn Markdown into html to use details > summary
 + [ ] - Create a decent help command <-- opens in browser
-+ [ ] - Create a logo
-+ [ ] - Crate a banner
-+ [ ] - Create a website
++ [x] - Create a logo
++ [x] - Crate a banner
++ [x] - Create a website
 + [ ] - Create a install script
 + [x] - Change the project name for another better > SHBash

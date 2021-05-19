@@ -19,5 +19,7 @@ a {
 }
 
 .white-text {
-    color: lavender
+    color: lavender;
+    display: inline-block;
+    text-align: center;
 }

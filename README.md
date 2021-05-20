@@ -1,7 +1,6 @@
 # GH Detective
-:::image type="complex" source="Help/Assets/Apple/ghdetective-200px.png" alt-text="GH Detective Cover":::
 
-:::image-end:::
+<img alt="Cover" src="./Help/Assets/Apple/ghdetective-200px.png">
 
 ## What is it?
 

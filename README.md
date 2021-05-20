@@ -9,9 +9,17 @@ It's a ShellScript CLI App that picks-up github's links, like events, trendings,
 <b>The features are: Search, Explore, Trending, Trending Devs, Get User Info, Topics, Learn and Open Souce Guide.</b>
 </p>
 
+<style
+  type="text/css">
+h1 {align: center;}
+
+</style>
+
 ---
 
-# How to use
+<br>
+# Test
+<h1 align="center">How to use</h1>
 
 ## Search
 **Standard:**

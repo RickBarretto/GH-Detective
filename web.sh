@@ -13,6 +13,9 @@ case $1 in
     devs)
         exec ./dev.sh $2 $3 $4
         ;;
+    search)
+        exec ./search.sh $*
+        ;;
     get)
         case $3 in
             --repos | -r)

@@ -1,13 +1,13 @@
-# GH Detective
+<h1 align="center">GH Detective</h1>
 
 <img alt="Cover" src="./Help/Assets/Cover/MD.png">
 
-## What is it?
-
+<h2 align="center">What is it?</h2>
+<p align="center">
 It's a ShellScript CLI App that picks-up github's links, like events, trendings, or a User's repository.
-
-
-**The features are: Search, Explore, Trending, Trending Devs, Get User Info, Topics, Learn and Open Souce Guide.**
+<br>
+<b>The features are: Search, Explore, Trending, Trending Devs, Get User Info, Topics, Learn and Open Souce Guide.</b>
+</p>
 
 ---
 

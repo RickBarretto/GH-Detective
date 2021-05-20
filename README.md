@@ -14,7 +14,7 @@ It's a ShellScript CLI App that picks-up github's links, like events, trendings,
 <br>
 <h1 align="center">How to use</h1>
 
-## Search
+## 🔎 Search
 **Standard:**
 ```bash
 $ ./web.sh search [search]

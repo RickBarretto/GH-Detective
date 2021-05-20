@@ -1,6 +1,6 @@
 # GH Detective
 
-<img alt="Cover" src="./Help/Assets/Cover/GH.png">
+<img alt="Cover" src="./Help/Assets/Cover/MD.png">
 
 ## What is it?
 

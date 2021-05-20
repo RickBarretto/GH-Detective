@@ -2,15 +2,10 @@
 
 ## What is it?
 
-This app captures the Github's trending. 
-
-<br>
-
+It's a ShellScript CLI App that picks-up github's links, like events, trendings, or a User's repository.
+The features are: Search, Explore, Trending, Trending Devs, Get User Info, Topics, Learn and Open Souce Guide.
 
 ---
-
-<br>
-<br>
 
 # How to use
 

@@ -1,9 +1,14 @@
 # GH Detective
+:::image type="complex" source="Help/Assets/Apple/ghdetective-200px.png" alt-text="GH Detective Cover":::
+
+:::image-end:::
 
 ## What is it?
 
 It's a ShellScript CLI App that picks-up github's links, like events, trendings, or a User's repository.
-The features are: Search, Explore, Trending, Trending Devs, Get User Info, Topics, Learn and Open Souce Guide.
+
+
+**The features are: Search, Explore, Trending, Trending Devs, Get User Info, Topics, Learn and Open Souce Guide.**
 
 ---
 

@@ -25,7 +25,7 @@ while [ ! -z "$2" ]; do
         --new | -n)
             sort='&s=updated'
             ;;
-        --repo | -r)
+        --repos | -r)
             type='&type=Repositories'
             ;;
         --discussions | -d)

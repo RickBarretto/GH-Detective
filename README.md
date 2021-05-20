@@ -14,6 +14,53 @@ This app captures the Github's trending.
 
 # How to use
 
+## Search
+**Standard:**
+```bash
+$ ./web.sh search [search]
+```
+> It'll returns to you informations from the [Github's Search page](https://github.com/search?).
+
+**With Language parameter:**
+```bash
+$ ./web.sh search [search] <lang>
+```
++ Lang can be whatever language that you want.
+> It'll returns to you informations from the [Github's Search page](https://github.com/search?) filtred by language.
+
+**With Type parameter:**
+```bash
+$ ./web.sh search [search] <type>
+```
++ Type can be:
+  + `--repos` | `-r`;
+  + `--discussions` | `-d`;
+  + `--users` | `-u`;
+> It'll returns to you informations from the [Github's Search page](https://github.com/search?) filtred by type.
+> 
+**With Sort parameter:**
+```bash
+$ ./web.sh search [search] <sort>
+```
++ Sort can be:
+  + `--best` | `-b`;
+  + `--star` | `-s`;
+  + `--forks` | `-f`;
+  + `--new` | `-n`;
+> It'll returns to you informations from the [Github's Search page](https://github.com/search?) sorted.
+
+**Examples:**
+```bash
+$ ./web.sh search unreal Csharp --best --r
+$ ./web.sh search unreal -b -r python
+$ ./web.sh search boot -star
+$ ./web.sh search rickb --user
+$ ./web.sh search rickb python -u 
+$ ./web.sh search design --discussions
+```
+
+---
+
 ## ✈️ Explore
 **Standard:**
 ```bash

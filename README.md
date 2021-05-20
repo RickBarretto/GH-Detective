@@ -1,6 +1,6 @@
 # GH Detective
 
-<img alt="Cover" src="./Help/Assets/Apple/ghdetective-200px.png">
+<img alt="Cover" src="./Help/Assets/Cover/GH.png">
 
 ## What is it?
 

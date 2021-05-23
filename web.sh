@@ -45,6 +45,9 @@ case $1 in
         cd ../test/
         exec ./test.sh $*
         ;;
+    events)
+        exec ./events.sh
+        ;;
     *)
         exec ./explore.sh $*
         ;;   

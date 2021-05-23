@@ -6,8 +6,8 @@
 + [x] - @critial Add a decent readme to this project
 + [x] - @removed ~~decide whether to change the terminal output to index.html renderized on a browser~~ (Removed)
 + [x] - @medium Search command
-+ [ ] - @high Events command
-+ [ ] - @low Trendings command
++ [x] - @high Events command
++ [x] - @low ~~Trendings command~~
 + [ ] - @medium Colletions command
 + [x] - @removed ~~Turn Markdown into html to use details > summary~~
 + [ ] - @critical Create a decent help command <-- opens in browser

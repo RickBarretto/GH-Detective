@@ -29,6 +29,7 @@ done
 # Catching Github's explore
 echo 'reading https://github.com/topics/'$topic$sort' ...'
 curl -s 'https://github.com/topics/'$topic$sort > temp
+echo
 
 # Picking relative link
 links=$(cat temp | grep 'class="text-bold"' | cut -d'=' -f7 | cut -d'"' -f2)

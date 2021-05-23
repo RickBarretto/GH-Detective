@@ -29,6 +29,7 @@ done
 
 echo 'reading https://github.com/trending/developers/'$lang'?since='$since' ...'
 curl -s 'https://github.com/trending/developers/'$lang'?since='$since > temp
+echo
 
 # Printing
 i=1

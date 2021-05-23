@@ -11,6 +11,8 @@ user=$(echo $* | cut -d' ' -f2)
 echo 'reading https://github.com/'$user' ...'
 curl -s 'https://github.com/'$user > temp
 
+echo
+
 name=$(cat temp | grep --color -A1 'itemprop="name"' | grep -v 'itemprop="name"' | awk '{print $1} {print $2} {print $3}' | tr $'\n' ' ')
 aname=$(cat temp | grep --color -A1 'itemprop="additionalName"' | grep -v 'itemprop="additionalName"' | awk '{print $1} {print $2} {print $3}' | tr $'\n' ' ')
 loc=$( cat temp | grep --color '<span class="p-label"' | cut -d'>' -f2 | cut -d'<' -f1)

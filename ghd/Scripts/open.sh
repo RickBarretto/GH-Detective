@@ -1,6 +1,7 @@
 # !/bin/bash
 # https://github.com/RickBarretto/GH-Detective
 
+echo
 echo 'opening links with: [' $* ']'
 for arg in $*; do
     links=$(cat toopen | grep $arg | cut -d' ' -f2)

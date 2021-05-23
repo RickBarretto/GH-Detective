@@ -45,6 +45,7 @@ echo -e 'https://github.com/search?l=HTML&o=desc&q=git&s=stars&type=Repositories
 
 echo 'reading https://github.com/search?'$lang$search$sort$type' ...'
 curl -s 'https://github.com/search?'$lang$search$sort$type > temp
+echo
 
 # Picking relative link
 links=$(cat temp | grep --color 'class="v-align-middle"' | cut -d':' -f14 | cut -d ';' -f1 | cut -d '&' -f1)

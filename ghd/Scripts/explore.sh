@@ -28,6 +28,7 @@ done
 
 echo 'reading https://github.com/explore ...'
 curl -s 'https://github.com/explore'> temp
+echo
 
 # Picking relative link
 links=$(cat temp | grep 'class="text-bold"' | cut -d '=' -f5 | cut -d'"' -f2)

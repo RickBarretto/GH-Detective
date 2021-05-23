@@ -26,8 +26,8 @@ while [ ! -z "$2" ]; do
 shift
 done
 
-echo 'https://github.com/trending/developers/'$lang'?since='$since
-curl 'https://github.com/trending/developers/'$lang'?since='$since > temp
+echo 'https://github.com/explore'
+curl 'https://github.com/explore'> temp
 
 # Picking relative link
 links=$(cat temp | grep 'class="text-bold"' | cut -d '=' -f5 | cut -d'"' -f2)

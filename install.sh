@@ -1,6 +1,6 @@
 # !/bin/bash
 
-
-clone_path=$(echo $PWD)
-bash_path=$(/usr/bin)
-
+cp ghd.sh /usr/bin
+cp -r ghd/ /usr/bin
+cd ~/
+alias ghd='ghd.sh'

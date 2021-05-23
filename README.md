@@ -14,23 +14,25 @@ It's a ShellScript CLI App that picks-up github's links, like events, trendings,
 <br>
 <h1 align="center">How to use</h1>
 
+> Note: If you are using Git's Shell Terminal on Windows, the ghd command will be ghd.sh
+
 ## 🔎 Search
 **Standard:**
 ```bash
-$ ./web.sh search [search]
+$ ghd search [search]
 ```
 > It'll returns to you informations from the [Github's Search page](https://github.com/search?).
 
 **With Language parameter:**
 ```bash
-$ ./web.sh search [search] <lang>
+$ ghd search [search] <lang>
 ```
 + Lang can be whatever language that you want.
 > It'll returns to you informations from the [Github's Search page](https://github.com/search?) filtred by language.
 
 **With Type parameter:**
 ```bash
-$ ./web.sh search [search] <type>
+$ ghd search [search] <type>
 ```
 + Type can be:
   + `--repos` | `-r`;
@@ -40,7 +42,7 @@ $ ./web.sh search [search] <type>
 > 
 **With Sort parameter:**
 ```bash
-$ ./web.sh search [search] <sort>
+$ ghd search [search] <sort>
 ```
 + Sort can be:
   + `--best` | `-b`;
@@ -51,12 +53,12 @@ $ ./web.sh search [search] <sort>
 
 **Examples:**
 ```bash
-$ ./web.sh search unreal Csharp --best --r
-$ ./web.sh search unreal -b -r python
-$ ./web.sh search boot -star
-$ ./web.sh search rickb --user
-$ ./web.sh search rickb python -u 
-$ ./web.sh search design --discussions
+$ ghd search unreal Csharp --best --r
+$ ghd search unreal -b -r python
+$ ghd search boot -star
+$ ghd search rickb --user
+$ ghd search rickb python -u 
+$ ghd search design --discussions
 ```
 
 ---
@@ -64,11 +66,11 @@ $ ./web.sh search design --discussions
 ## ✈️ Explore
 **Standard:**
 ```bash
-$ ./web.sh
+$ ghd
 ```
 **Alternative:**
 ```bash
-$ ./web.sh explore
+$ ghd explore
 ```
 > It'll returns to you informations from the [Explore Github's page](https://github.com/explore).
 
@@ -77,11 +79,11 @@ $ ./web.sh explore
 ## 👋 Devs
 **Standard:**
 ```bash
-$ ./web.sh devs
+$ ghd devs
 ```
 **With Since parameter**
 ```bash
-$ ./web.sh devs <--since>
+$ ghd devs <--since>
 ```
 + Since can be:
     + `--month` | `--monthly` | `-m`;
@@ -90,14 +92,14 @@ $ ./web.sh devs <--since>
 
 **With Language parameter**
 ```bash
-$ ./web.sh devs <lang>
+$ ghd devs <lang>
 ```
 + Lang can be whatever language that you want.
 
 **Examples:**
 ```bash
-$ ./web.sh devs python --m
-$ ./web.sh devs -w cpp
+$ ghd devs python --m
+$ ghd devs -w cpp
 ```
 > It'll returns to you informations from the [Trending > Developers Github's page](https://github.com/trending/developers).
 
@@ -106,13 +108,13 @@ $ ./web.sh devs -w cpp
 ## 🙌 Get
 **Standard:**
 ```bash
-$ ./web.sh get [username]
+$ ghd get [username]
 ```
 > It'll returns to you informations from the [Github > Developer's Profie](https://github.com/RickBarretto).
 
 **With Repository parameter**
 ```bash
-$ ./web.sh get [username] <--repo>
+$ ghd get [username] <--repo>
 ```
 + Repo can be:
   + `--repo` | `-r`
@@ -120,21 +122,21 @@ $ ./web.sh get [username] <--repo>
 
 **Examples:**
 ```bash
-$ ./web.sh get rickbarretto
-$ ./web.sh get john-preston -r
+$ ghd get rickbarretto
+$ ghd get john-preston -r
 ```
 
 ---
 
 ## 📚 Topic
 ```bash
-$ ./web.sh topic [topic]
+$ ghd topic [topic]
 ```
 > It'll returns to you informations from the [Github > Topics > Topic](https://github.com/topics).
 
 **With Sort parameter**
 ```bash
-$ ./web.sh topic [topic] <--sort>
+$ ghd topic [topic] <--sort>
 ```
 + Sort can be:
   + `--best` | `-b`;
@@ -145,15 +147,15 @@ $ ./web.sh topic [topic] <--sort>
 
 **Examples:**
 ```bash
-$ ./web.sh topic 3d
-$ ./web.sh topic bash --new
+$ ghd topic 3d
+$ ghd topic bash --new
 ```
 
 ---
 
 ## 🏫 Learn
 ```bash
-$ ./web.sh learn
+$ ghd learn
 ```
 > Returns all Learning content from [Github > Collections > Learn To Code](https://github.com/collections/learn-to-code)
 ---
@@ -163,7 +165,7 @@ $ ./web.sh learn
 After using a command that returns Github's links, you can use this command to automaticaly open, on standard browser, the last links showed.
 
 ```bash
-$ ./web.sh open [grep-array]
+$ ghd open [grep-array]
 ```
 + Grep-Array can be:
   + You must to write the link adress, or a section from this link. The program'll parse it and open.
@@ -172,11 +174,11 @@ $ ./web.sh open [grep-array]
 
 **Examples:**
 ```bash
-$ ./web.sh topic bash --s
-$ ./web.sh open the-art pure-bash check
+$ ghd topic bash --s
+$ ghd open the-art pure-bash check
 
-$ ./web.sh get john-preston --repos
-$ ./web.sh open desktop macho meson
+$ ghd get john-preston --repos
+$ ghd open desktop macho meson
 ```
 
 ---
@@ -185,12 +187,12 @@ $ ./web.sh open desktop macho meson
 
 ### OpenSource
 ```bash
-$ ./web.sh opensource
+$ ghd opensource
 ```
 > Opens [Source Guidelines](https://opensource.guide/)
 
 ### Guide
 ```bash
-$ ./web.sh guide
+$ ghd guide
 ```
 > Opens [Source Guidelines](https://opensource.guide/)

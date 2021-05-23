@@ -1,6 +1,6 @@
 <h1 align="center">GH Detective</h1>
 
-<img alt="Cover" src="./ghd//Help/Assets/Cover/MD.png">
+<img alt="Cover" src="./ghd//Help/Assets/Cover/MD.png" align="center">
 
 <h2 align="center">What is it?</h2>
 <p align="center">

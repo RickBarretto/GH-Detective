@@ -1,0 +1,33 @@
+
+
+  [C]
+    
+    > c - [C is a programming language designed by Dennis Ritchie at Bell Labs. C is very widely used, straightforward, and can be compiled to a number of platforms and operating systems. C is an imperative language, with a small number of keywords and a large number of mathematical operators.]
+
+    > chrome - [Chrome is the most popular web browser worldwide as of mid-2017, made by the tech company Google. It's available for most operating systems including Windows, macOS, and Linux and on multiple platforms such as the desktop, phones, and tablets.]
+
+    > chrome-extension - [Google Chrome Extensions are add-ons that allow users to customize their Chrome web browser.]
+
+    > cli - [Before there were graphical user interfaces, command-line interfaces were used to issue commands to a computer. Programs that handle the user interface are called command language interpreters, often known as a shell. A CLI may give a user more control over the computer and programs they wish to execute.]
+
+    > clojure - [Clojure is a functional, dynamic, general-purpose programming language. It provides built-in concurrency support via software transactional memory and asynchronous agents, and offers a rich set of immutable, persistent data structures. Clojure runs on JVM, JavaScript VMs, and Common Language Runtime.]
+
+    > code-quality - [Automate your code review with style, quality, security, and test‑coverage checks when you need them most. Code quality is intended to keep complexity down and runtime up.]
+
+    > code-review - [Code review is systematic examination (sometimes referred to as peer review) of computer source code. It is intended to find mistakes overlooked in software development, improving the overall quality of software. Reviews are done in various forms such as pair programming, informal walkthroughs, and formal inspections.]
+
+    > compiler - [Compilers are software that translate higher-level (more human readable) programming languages to lower-level languages (e.g. machine code). The processor executes machine code, which indicates when binary high and low signals are required in the arithmetic logic unit of the processor. Examples of compiled languages include BASIC, Fortran, C++, C, and Java.]
+
+    > continuous-integration - [Automatically build and test your code as you push it upstream, preventing bugs from being deployed to production. A complementary practice to CI is that before submitting work, each programmer must do a complete build and run (and pass) all unit tests. Integration tests are usually run automatically on a CI server when it detects a new commit.]
+
+    > covid-19 - [The coronavirus disease 2019 (COVID-19) is an infectious disease caused by a type of coronavirus known as SARS-CoV-2 that had caused an ongoing pandemic. This topic is associated with repositories that contain code focused around research and awareness of the virus.]
+
+    > cpp - [C++ is a popular and widely used mid-level language. It was designed as an extension of the C language.]
+
+    > cryptocurrency - [A cryptocurrency is a digital currency that only has value dependent on those who back it. For security, cryptocurrencies rely on blockchaining: a database organized in such a way that records are kept secure through peer-to-peer networks. Each record is kept within a block, and each block holds a timestamp and link to the block before it. The first cryptocurrency was Bitcoin, implemented in 2009 by Satoshi Nakamoto.]
+
+    > crystal - [Crystal is a programming language with friendly syntax, static type checking and modern stdlib. It compiles into efficient, easy-to-distribute native code.]
+
+    > csharp - [C# (pronounced "C sharp") is a simple, modern, object-oriented, and type-safe programming language.]
+
+    > css - [Cascading Style Sheets (CSS) is a language used most often to style and improve upon the appearance of views. It allows for the separation of presentation and content, and includes the characteristics of layouts, colors and fonts. CSS builds upon HTML to make webpages more interactive and appealing to the user.]

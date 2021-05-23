@@ -1,7 +1,7 @@
 # !/bin/bash
 # https://github.com/RickBarretto/Github-cli-scrapy
 
-cd Scripts/
+cd ghd/Scripts/
 
 case $1 in
     explore)

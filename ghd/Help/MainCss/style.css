@@ -1,0 +1,323 @@
+:root {
+    --title-initial: .5s;
+    --menu-initial: 1.5s;
+    --foot-initial: 3s;
+    --footer-initial: 3.5s;
+}
+
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background:lavender;
+    overflow: hidden;
+}
+
+.bg > .h-red {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.container {
+
+    height: calc(100vh - 2rem);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+.container > .title {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.container > .title > img {
+    width: 100%;
+    opacity: 0;
+    animation:fade2 .5s ease-out calc(var(--title-initial) + 1s  ) forwards;
+}
+
+.container > .title > h1 {
+    opacity: 0;
+    text-align: center;
+    animation:fade2 .5s ease-out calc(var(--title-initial) + .5s  ) forwards;
+}
+
+.container > .more {
+    place-self: center end;
+}
+
+.container > .more > ul > li {
+    text-align: center;
+    background: #000;
+    padding: 1rem 10rem;
+    margin: 1rem 0;
+    transform: skew(-20deg) translateX(1rem);
+    transform-origin: right;
+}
+
+.container > .more > ul > li:hover {
+    background: lavender;
+    color: black;
+    box-shadow: black 1rem 1rem 2rem;
+    color: black;
+    transform: skew(-20deg) translateX(1rem) translateY(-.5rem);
+    transition: .2s ease-in;
+}
+
+.container > .more > ul > li:hover > a {
+    color: black;
+}
+
+.container  > .more >  ul > li:nth-child(1){
+    animation:menu .5s ease-out calc(var(--menu-initial) + .5s ) forwards; opacity: 0;
+} .container > .more > ul > li:nth-child(2){
+    animation:menu .5s ease-out calc(var(--menu-initial) + 1s  ) forwards; opacity: 0;
+} .container > .more > ul > li:nth-child(3){
+    animation:menu .5s ease-out calc(var(--menu-initial) + 1.5s) forwards; opacity: 0;
+}
+
+.container > .more > div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background: #000;
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: center;
+}
+
+footer > ul {
+    display: flex;
+    width: 100%;
+    flex-flow: nowrap row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    gap: .1rem;
+    padding: 0 1rem;
+    opacity: 0;
+    animation:fade2 .5s ease-out calc(var(--footer-initial) + .5s ) forwards;
+}
+
+ul {
+    list-style: none;
+}
+
+.ftp {
+    height: 100%;
+    transform: rotate(10deg) translateY(-1rem);
+}
+
+.footprint {
+    width: 5rem;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(2rem);
+    opacity: 0;
+}
+
+.fleft {
+    left: 50%;
+    transform: scaleX(-1) translateY(-4rem) translateX(2rem);
+}
+
+.footprint:nth-child(3), .footprint:nth-child(4) {
+    bottom: 20%;
+}
+
+.footprint:nth-child(5), .footprint:nth-child(6) {
+    bottom: 40%;
+}
+
+.footprint:nth-child(7), .footprint:nth-child(8) {
+    bottom: 60%;
+}
+
+.footprint:nth-child(9), .footprint:nth-child(10) {
+    bottom: 80%;
+}
+
+#f1 {
+    animation:fade .5s ease-out calc(var(--foot-initial) + .5s ) forwards;
+} #f2 {
+    animation:fade .5s ease-out calc(var(--foot-initial) + 1s  ) forwards;
+} #f3 {
+    animation:fade .5s ease-out calc(var(--foot-initial) + 1.5s) forwards;
+} #f4 {
+    animation:fade .5s ease-out calc(var(--foot-initial) + 2s  ) forwards;
+} #f5 {
+    animation:fade .5s ease-out calc(var(--foot-initial) + 2.5s) forwards;
+} #f6 {
+    animation:fade .5s ease-out calc(var(--foot-initial) + 3s  ) forwards;
+} #f7 {
+    animation:fade .5s ease-out calc(var(--foot-initial) + 3.5s) forwards;
+} #f8 {
+    animation:fade .5s ease-out calc(var(--foot-initial) + 4s  ) forwards;
+} #f9 {
+    animation:fade .5s ease-out calc(var(--foot-initial) + 4.5s) forwards;
+} #f10 {
+    animation:fade .5s ease-out calc(var(--foot-initial) + 5s  ) forwards;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 0.7;
+    }
+}
+
+@keyframes fade2 {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@keyframes menu {
+    from {
+        opacity: 0;
+        width: 0%;
+    } to {
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+@media screen and (max-height: 437px) 
+{
+    .container > .title > img {
+        width: 70%;
+    }
+
+    .h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-height: 437px) and (max-width: 480)
+{
+    .container > .more > ul > li {
+        padding: 0rem 5rem;
+    }
+    .side-menu {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 790px) 
+{
+    .container {
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    .container > .more > ul > li {
+    padding: 1rem 5rem;
+    }
+
+    .container > .title {
+        padding: 2rem;
+    }
+}
+
+
+@media (orientation: portrait) 
+{
+    body {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .bg > .h-red {
+        position: absolute;
+        right: 0;
+        top: -10rem;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+    }
+
+    .container {
+        height: 100vh;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        overflow: hidden;
+        padding-bottom: 4rem;
+        justify-content: center;
+    }
+
+    footer > ul {
+        display: flex;
+        flex-flow: nowrap column;
+        justify-content: center;
+        align-items: center;
+        padding: .2rem .2rem;
+        opacity: 0;
+        animation:fade2 .5s ease-out calc(var(--footer-initial) + .5s ) forwards;
+    }
+
+    .h1 {
+        font-size: 2rem;
+    }
+}
+
+/* NEXUS */
+@media screen and (max-width: 360px) and (max-height: 640px) {
+    .h1 {
+        font-size: 1.2rem;
+    }
+    .side-menu {
+        font-size: 1rem;
+    }
+    footer {
+        font-size: .7rem;
+    }
+}
+
+/* JIO PHONE 2 */
+@media screen and (max-width: 240px) and (max-height: 320px) {
+    .h1 {
+        font-size: 1.2rem;
+    }
+    .side-menu {
+        font-size: 1rem;
+    }
+    footer {
+        font-size: .7rem;
+    }
+    .container > .more > ul > li {
+        text-align: center;
+        background: #000;
+        padding: .2rem 5rem;
+        margin: .5rem 0;
+    }
+
+    .footprint {
+        width: 2rem;
+    }
+
+    .fleft {
+        left: 50%;
+        transform: scaleX(-1) translateY(-1rem) translateX(1rem);
+    }
+}

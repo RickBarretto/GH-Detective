@@ -14,6 +14,13 @@ It's a ShellScript CLI App that picks-up github's links, like events, trendings,
 <br>
 <h1 align="center">How to use</h1>
 
+## Installation
+```bash
+$ git clone git+https://github.com/RickBarretto/GH-Detective.git
+$ cd GH-Detective/
+$ ./install.sh
+```
+
 > Note: If you are using Git's Shell Terminal on Windows, the ghd command will be ghd.sh
 
 ## 🔎 Search

@@ -5,7 +5,8 @@
 # Cleaning file
 echo '' > toopen
 
-curl 'https://github.com/events' > temp
+echo 'reading https://github.com/events ...'
+curl -s 'https://github.com/events' > temp
 
 links=$(cat temp | grep 'data-view-component=' | grep ' class=' -v | grep 'href="https' --color | cut -d'"' -f4)
 # Printing

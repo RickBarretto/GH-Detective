@@ -1,7 +1,7 @@
 # !/bin/bash
 # https://github.com/RickBarretto/GH-Detective
 
-echo $*
+
 # Cleaning file
 echo '' > toopen
 
@@ -26,8 +26,8 @@ while [ ! -z "$2" ]; do
 shift
 done
 
-echo 'https://github.com/explore'
-curl 'https://github.com/explore'> temp
+echo 'reading https://github.com/explore ...'
+curl -s 'https://github.com/explore'> temp
 
 # Picking relative link
 links=$(cat temp | grep 'class="text-bold"' | cut -d '=' -f5 | cut -d'"' -f2)

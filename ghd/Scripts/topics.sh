@@ -1,7 +1,7 @@
 # !/bin/bash
 # https://github.com/RickBarretto/GH-Detective
 
-echo $*
+
 # Cleaning file
 echo '' > toopen
 topic=$2
@@ -27,8 +27,8 @@ shift
 done
 
 # Catching Github's explore
-echo 'https://github.com/topics/'$topic$sort
-curl 'https://github.com/topics/'$topic$sort > temp
+echo 'reading https://github.com/topics/'$topic$sort' ...'
+curl -s 'https://github.com/topics/'$topic$sort > temp
 
 # Picking relative link
 links=$(cat temp | grep 'class="text-bold"' | cut -d'=' -f7 | cut -d'"' -f2)

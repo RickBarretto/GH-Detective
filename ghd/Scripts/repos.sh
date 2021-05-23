@@ -1,15 +1,15 @@
 # !/bin/bash
 # https://github.com/RickBarretto/GH-Detective
 
-echo $*
+
 # Cleaning file
 echo '' > toopen
 
 user=$(echo $* | cut -d' ' -f2)
 
 # Catching Github's explore
-echo 'https://github.com/'$user'?tab=repositories'
-curl 'https://github.com/'$user'?tab=repositories' > temp
+echo 'reading https://github.com/'$user'?tab=repositories ...'
+curl -s 'https://github.com/'$user'?tab=repositories' > temp
 
 name=$(cat temp | grep --color -A1 'itemprop="name"' | grep -v 'itemprop="name"' | awk '{print $1} {print $2} {print $3}' | tr $'\n' ' ')
 aname=$(cat temp | grep --color -A1 'itemprop="additionalName"' | grep -v 'itemprop="additionalName"' | awk '{print $1} {print $2} {print $3}' | tr $'\n' ' ')

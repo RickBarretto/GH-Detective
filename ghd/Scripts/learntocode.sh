@@ -1,12 +1,13 @@
 # !/bin/bash
 # https://github.com/RickBarretto/GH-Detective
 
-echo $*
+
 # Cleaning file
 echo '' > toopen
 
 # Catching Github's learn to code
-curl 'https://github.com/collections/learn-to-code' > temp
+echo 'reading https://github.com/collections/learn-to-code ...'
+curl -s 'https://github.com/collections/learn-to-code' > temp
 
 # Picking relative link
 links=$(cat temp | grep 'data-ga-click="Explore, go to repository, location: collection"' | cut -d'=' -f2 | cut -d'"' -f2)

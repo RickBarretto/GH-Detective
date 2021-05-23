@@ -1,7 +1,7 @@
 # !/bin/bash
 # https://github.com/RickBarretto/GH-Detective
 
-echo $*
+
 # Cleaning file
 echo '' > toopen
 lang=$('')
@@ -27,8 +27,8 @@ while [ ! -z "$2" ]; do
 shift
 done
 
-echo 'https://github.com/trending/developers/'$lang'?since='$since
-curl 'https://github.com/trending/developers/'$lang'?since='$since > temp
+echo 'reading https://github.com/trending/developers/'$lang'?since='$since' ...'
+curl -s 'https://github.com/trending/developers/'$lang'?since='$since > temp
 
 # Printing
 i=1

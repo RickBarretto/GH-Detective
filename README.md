@@ -20,8 +20,9 @@ $ git clone git+https://github.com/RickBarretto/GH-Detective.git
 $ cd GH-Detective/
 $ ./install.sh
 ```
-
-> Note: If you are using Git's Shell Terminal on Windows, the ghd command will be ghd.sh
+<blockquote style="color: red;">
+Note: If you are using Git's Shell Terminal on Windows, the ghd command will be ghd.sh
+</blockquote>
 
 ## 🔎 Search
 **Standard:**
